@@ -6,7 +6,7 @@ Decentralized CFP selection in Conferences
 
 # Problem
 
-  Wherever there is centralization, there will be distrust. Centralization is responsible somehow most of the bad things happening in the society like cold war, divorce, breakup, distrust etc. There is one segment where very few people think of about is the conference.
+  Wherever there is centralization, there will be distrust. Centralization is responsible somehow, for most of the bad things happening in the society like cold war, divorce, breakup, distrust etc. And one segment of which very few people think about, is the conference.
 
 ### Current scenario of conferences: 
 
