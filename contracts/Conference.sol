@@ -1,4 +1,29 @@
-pragma solidity ^0.4.2;
+pragma solidity ^0.4.20;
+
+
+contract Home {
+
+    constructor() public {
+
+    }
+
+    function addConference() public {
+
+    }
+
+    function joinDxCon() public {
+
+    }
+
+    function viewConference() public view {
+
+    }
+
+    function viewGeneralMembers() public view {
+
+    }
+
+}
 
 
 contract Conference {
@@ -21,7 +46,7 @@ contract Conference {
 
     }
 
-    function viewSpecificlMembers() public view {
+    function viewSpecificMembers() public view {
 
     }
 
