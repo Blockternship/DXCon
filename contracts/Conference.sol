@@ -28,14 +28,28 @@ contract Home {
 
 contract Conference {
 
-    string name;
-    string url;
-    string date;
-    string venue;
-    string freezeTime;
+    Member[] public members;
+    Speaker[] public speakers;
 
     constructor() public {
 
+    }
+
+    struct Member {
+        string memberName;
+    }
+
+    struct Speaker {
+        string speakerName;
+        uint votes;
+    }
+
+    struct Conference {
+        string conferenceNxame;
+        string url;
+        string date;
+        string venue;
+        string freezeTime;
     }
 
     function joinConference() public {

@@ -1,0 +1,1632 @@
+{
+  "contractName": "Home",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "addConference",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "joinDxCon",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "viewConference",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "viewGeneralMembers",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5060e68061001f6000396000f300608060405260043610605d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630ea571cf1460625780632e0abd9714607657806366f57e2b14608a578063a215012f14609e575b600080fd5b348015606d57600080fd5b50607460b2565b005b348015608157600080fd5b50608860b4565b005b348015609557600080fd5b50609c60b6565b005b34801560a957600080fd5b5060b060b8565b005b565b565b565b5600a165627a7a72305820143e3cbffaa33a79de22fcdd3cb77762c518a6bdc32a142bb337e803abf2f1490029",
+  "deployedBytecode": "0x608060405260043610605d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630ea571cf1460625780632e0abd9714607657806366f57e2b14608a578063a215012f14609e575b600080fd5b348015606d57600080fd5b50607460b2565b005b348015608157600080fd5b50608860b4565b005b348015609557600080fd5b50609c60b6565b005b34801560a957600080fd5b5060b060b8565b005b565b565b565b5600a165627a7a72305820143e3cbffaa33a79de22fcdd3cb77762c518a6bdc32a142bb337e803abf2f1490029",
+  "sourceMap": "27:249:0:-;;;48:29;8:9:-1;5:2;;;30:1;27;20:12;5:2;48:29:0;27:249;;;;;;",
+  "deployedSourceMap": "27:249:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;129:36;;8:9:-1;5:2;;;30:1;27;20:12;5:2;129:36:0;;;;;;171:46;;8:9:-1;5:2;;;30:1;27;20:12;5:2;171:46:0;;;;;;83:40;;8:9:-1;5:2;;;30:1;27;20:12;5:2;83:40:0;;;;;;223:50;;8:9:-1;5:2;;;30:1;27;20:12;5:2;223:50:0;;;;;;129:36;:::o;171:46::-;:::o;83:40::-;:::o;223:50::-;:::o",
+  "source": "pragma solidity ^0.4.20;\n\n\ncontract Home {\n\n    constructor() public {\n\n    }\n\n    function addConference() public {\n\n    }\n\n    function joinDxCon() public {\n\n    }\n\n    function viewConference() public view {\n\n    }\n\n    function viewGeneralMembers() public view {\n\n    }\n\n}\n\n\ncontract Conference {\n\n    Member[] public members;\n    Speaker[] public speakers;\n\n    constructor() public {\n\n    }\n\n    struct Member {\n        string memberName;\n    }\n\n    struct Speaker {\n        string speakerName;\n        uint votes;\n    }\n\n    struct Conference {\n        string conferenceNxame;\n        string url;\n        string date;\n        string venue;\n        string freezeTime;\n    }\n\n    function joinConference() public {\n\n    }\n\n    function getDetails() public view {\n\n    }\n\n    function viewSpecificMembers() public view {\n\n    }\n\n    function proposeSpeakerList() public {\n\n    }\n\n    function applyAsSpeaker() public {\n\n    }\n\n    function upvoteASpeaker() public {\n\n    }\n\n}\n",
+  "sourcePath": "/home/desciple/Amaal/DXCon/contracts/Conference.sol",
+  "ast": {
+    "absolutePath": "/home/desciple/Amaal/DXCon/contracts/Conference.sol",
+    "exportedSymbols": {
+      "Conference": [
+        76
+      ],
+      "Home": [
+        22
+      ]
+    },
+    "id": 77,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".20"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 22,
+        "linearizedBaseContracts": [
+          22
+        ],
+        "name": "Home",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 4,
+              "nodeType": "Block",
+              "src": "69:8:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 5,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "59:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "69:0:0"
+            },
+            "scope": 22,
+            "src": "48:29:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 8,
+              "nodeType": "Block",
+              "src": "115:8:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 9,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "addConference",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "105:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 7,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "115:0:0"
+            },
+            "scope": 22,
+            "src": "83:40:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 12,
+              "nodeType": "Block",
+              "src": "157:8:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 13,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "joinDxCon",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "147:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 11,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "157:0:0"
+            },
+            "scope": 22,
+            "src": "129:36:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 16,
+              "nodeType": "Block",
+              "src": "209:8:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 17,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "viewConference",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 14,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "194:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 15,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "209:0:0"
+            },
+            "scope": 22,
+            "src": "171:46:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 20,
+              "nodeType": "Block",
+              "src": "265:8:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 21,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "viewGeneralMembers",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 18,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "250:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 19,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "265:0:0"
+            },
+            "scope": 22,
+            "src": "223:50:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 77,
+        "src": "27:249:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 76,
+        "linearizedBaseContracts": [
+          76
+        ],
+        "name": "Conference",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 25,
+            "name": "members",
+            "nodeType": "VariableDeclaration",
+            "scope": 76,
+            "src": "306:23:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_Member_$35_storage_$dyn_storage",
+              "typeString": "struct Conference.Member[]"
+            },
+            "typeName": {
+              "baseType": {
+                "contractScope": null,
+                "id": 23,
+                "name": "Member",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 35,
+                "src": "306:6:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Member_$35_storage_ptr",
+                  "typeString": "struct Conference.Member"
+                }
+              },
+              "id": 24,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "306:8:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_Member_$35_storage_$dyn_storage_ptr",
+                "typeString": "struct Conference.Member[]"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 28,
+            "name": "speakers",
+            "nodeType": "VariableDeclaration",
+            "scope": 76,
+            "src": "335:25:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_Speaker_$40_storage_$dyn_storage",
+              "typeString": "struct Conference.Speaker[]"
+            },
+            "typeName": {
+              "baseType": {
+                "contractScope": null,
+                "id": 26,
+                "name": "Speaker",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 40,
+                "src": "335:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Speaker_$40_storage_ptr",
+                  "typeString": "struct Conference.Speaker"
+                }
+              },
+              "id": 27,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "335:9:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_Speaker_$40_storage_$dyn_storage_ptr",
+                "typeString": "struct Conference.Speaker[]"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 31,
+              "nodeType": "Block",
+              "src": "388:8:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 32,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 29,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "378:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 30,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "388:0:0"
+            },
+            "scope": 76,
+            "src": "367:29:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Conference.Member",
+            "id": 35,
+            "members": [
+              {
+                "constant": false,
+                "id": 34,
+                "name": "memberName",
+                "nodeType": "VariableDeclaration",
+                "scope": 35,
+                "src": "426:17:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 33,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "426:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Member",
+            "nodeType": "StructDefinition",
+            "scope": 76,
+            "src": "402:48:0",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Conference.Speaker",
+            "id": 40,
+            "members": [
+              {
+                "constant": false,
+                "id": 37,
+                "name": "speakerName",
+                "nodeType": "VariableDeclaration",
+                "scope": 40,
+                "src": "481:18:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 36,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "481:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 39,
+                "name": "votes",
+                "nodeType": "VariableDeclaration",
+                "scope": 40,
+                "src": "509:10:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 38,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "509:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Speaker",
+            "nodeType": "StructDefinition",
+            "scope": 76,
+            "src": "456:70:0",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Conference.Conference",
+            "id": 51,
+            "members": [
+              {
+                "constant": false,
+                "id": 42,
+                "name": "conferenceNxame",
+                "nodeType": "VariableDeclaration",
+                "scope": 51,
+                "src": "560:22:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 41,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "560:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 44,
+                "name": "url",
+                "nodeType": "VariableDeclaration",
+                "scope": 51,
+                "src": "592:10:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 43,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "592:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46,
+                "name": "date",
+                "nodeType": "VariableDeclaration",
+                "scope": 51,
+                "src": "612:11:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 45,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "612:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 48,
+                "name": "venue",
+                "nodeType": "VariableDeclaration",
+                "scope": 51,
+                "src": "633:12:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 47,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "633:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 50,
+                "name": "freezeTime",
+                "nodeType": "VariableDeclaration",
+                "scope": 51,
+                "src": "655:17:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 49,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "655:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Conference",
+            "nodeType": "StructDefinition",
+            "scope": 76,
+            "src": "532:147:0",
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 54,
+              "nodeType": "Block",
+              "src": "718:8:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 55,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "joinConference",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 52,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "708:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 53,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "718:0:0"
+            },
+            "scope": 76,
+            "src": "685:41:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 58,
+              "nodeType": "Block",
+              "src": "766:8:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 59,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getDetails",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 56,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "751:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 57,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "766:0:0"
+            },
+            "scope": 76,
+            "src": "732:42:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 62,
+              "nodeType": "Block",
+              "src": "823:8:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 63,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "viewSpecificMembers",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 60,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "808:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 61,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "823:0:0"
+            },
+            "scope": 76,
+            "src": "780:51:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 66,
+              "nodeType": "Block",
+              "src": "874:8:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 67,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "proposeSpeakerList",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 64,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "864:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 65,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "874:0:0"
+            },
+            "scope": 76,
+            "src": "837:45:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 70,
+              "nodeType": "Block",
+              "src": "921:8:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 71,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "applyAsSpeaker",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 68,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "911:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 69,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "921:0:0"
+            },
+            "scope": 76,
+            "src": "888:41:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 74,
+              "nodeType": "Block",
+              "src": "968:8:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 75,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "upvoteASpeaker",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 72,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "958:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 73,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "968:0:0"
+            },
+            "scope": 76,
+            "src": "935:41:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 77,
+        "src": "279:700:0"
+      }
+    ],
+    "src": "0:980:0"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/desciple/Amaal/DXCon/contracts/Conference.sol",
+    "exportedSymbols": {
+      "Conference": [
+        76
+      ],
+      "Home": [
+        22
+      ]
+    },
+    "id": 77,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".20"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 22,
+        "linearizedBaseContracts": [
+          22
+        ],
+        "name": "Home",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 4,
+              "nodeType": "Block",
+              "src": "69:8:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 5,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "59:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "69:0:0"
+            },
+            "scope": 22,
+            "src": "48:29:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 8,
+              "nodeType": "Block",
+              "src": "115:8:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 9,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "addConference",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "105:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 7,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "115:0:0"
+            },
+            "scope": 22,
+            "src": "83:40:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 12,
+              "nodeType": "Block",
+              "src": "157:8:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 13,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "joinDxCon",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 10,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "147:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 11,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "157:0:0"
+            },
+            "scope": 22,
+            "src": "129:36:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 16,
+              "nodeType": "Block",
+              "src": "209:8:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 17,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "viewConference",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 14,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "194:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 15,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "209:0:0"
+            },
+            "scope": 22,
+            "src": "171:46:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 20,
+              "nodeType": "Block",
+              "src": "265:8:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 21,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "viewGeneralMembers",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 18,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "250:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 19,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "265:0:0"
+            },
+            "scope": 22,
+            "src": "223:50:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 77,
+        "src": "27:249:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 76,
+        "linearizedBaseContracts": [
+          76
+        ],
+        "name": "Conference",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 25,
+            "name": "members",
+            "nodeType": "VariableDeclaration",
+            "scope": 76,
+            "src": "306:23:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_Member_$35_storage_$dyn_storage",
+              "typeString": "struct Conference.Member[]"
+            },
+            "typeName": {
+              "baseType": {
+                "contractScope": null,
+                "id": 23,
+                "name": "Member",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 35,
+                "src": "306:6:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Member_$35_storage_ptr",
+                  "typeString": "struct Conference.Member"
+                }
+              },
+              "id": 24,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "306:8:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_Member_$35_storage_$dyn_storage_ptr",
+                "typeString": "struct Conference.Member[]"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 28,
+            "name": "speakers",
+            "nodeType": "VariableDeclaration",
+            "scope": 76,
+            "src": "335:25:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_Speaker_$40_storage_$dyn_storage",
+              "typeString": "struct Conference.Speaker[]"
+            },
+            "typeName": {
+              "baseType": {
+                "contractScope": null,
+                "id": 26,
+                "name": "Speaker",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 40,
+                "src": "335:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Speaker_$40_storage_ptr",
+                  "typeString": "struct Conference.Speaker"
+                }
+              },
+              "id": 27,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "335:9:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_Speaker_$40_storage_$dyn_storage_ptr",
+                "typeString": "struct Conference.Speaker[]"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 31,
+              "nodeType": "Block",
+              "src": "388:8:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 32,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 29,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "378:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 30,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "388:0:0"
+            },
+            "scope": 76,
+            "src": "367:29:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Conference.Member",
+            "id": 35,
+            "members": [
+              {
+                "constant": false,
+                "id": 34,
+                "name": "memberName",
+                "nodeType": "VariableDeclaration",
+                "scope": 35,
+                "src": "426:17:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 33,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "426:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Member",
+            "nodeType": "StructDefinition",
+            "scope": 76,
+            "src": "402:48:0",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Conference.Speaker",
+            "id": 40,
+            "members": [
+              {
+                "constant": false,
+                "id": 37,
+                "name": "speakerName",
+                "nodeType": "VariableDeclaration",
+                "scope": 40,
+                "src": "481:18:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 36,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "481:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 39,
+                "name": "votes",
+                "nodeType": "VariableDeclaration",
+                "scope": 40,
+                "src": "509:10:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 38,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "509:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Speaker",
+            "nodeType": "StructDefinition",
+            "scope": 76,
+            "src": "456:70:0",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Conference.Conference",
+            "id": 51,
+            "members": [
+              {
+                "constant": false,
+                "id": 42,
+                "name": "conferenceNxame",
+                "nodeType": "VariableDeclaration",
+                "scope": 51,
+                "src": "560:22:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 41,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "560:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 44,
+                "name": "url",
+                "nodeType": "VariableDeclaration",
+                "scope": 51,
+                "src": "592:10:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 43,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "592:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 46,
+                "name": "date",
+                "nodeType": "VariableDeclaration",
+                "scope": 51,
+                "src": "612:11:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 45,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "612:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 48,
+                "name": "venue",
+                "nodeType": "VariableDeclaration",
+                "scope": 51,
+                "src": "633:12:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 47,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "633:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 50,
+                "name": "freezeTime",
+                "nodeType": "VariableDeclaration",
+                "scope": 51,
+                "src": "655:17:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 49,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "655:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Conference",
+            "nodeType": "StructDefinition",
+            "scope": 76,
+            "src": "532:147:0",
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 54,
+              "nodeType": "Block",
+              "src": "718:8:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 55,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "joinConference",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 52,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "708:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 53,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "718:0:0"
+            },
+            "scope": 76,
+            "src": "685:41:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 58,
+              "nodeType": "Block",
+              "src": "766:8:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 59,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getDetails",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 56,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "751:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 57,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "766:0:0"
+            },
+            "scope": 76,
+            "src": "732:42:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 62,
+              "nodeType": "Block",
+              "src": "823:8:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 63,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "viewSpecificMembers",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 60,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "808:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 61,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "823:0:0"
+            },
+            "scope": 76,
+            "src": "780:51:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 66,
+              "nodeType": "Block",
+              "src": "874:8:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 67,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "proposeSpeakerList",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 64,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "864:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 65,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "874:0:0"
+            },
+            "scope": 76,
+            "src": "837:45:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 70,
+              "nodeType": "Block",
+              "src": "921:8:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 71,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "applyAsSpeaker",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 68,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "911:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 69,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "921:0:0"
+            },
+            "scope": 76,
+            "src": "888:41:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 74,
+              "nodeType": "Block",
+              "src": "968:8:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 75,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "upvoteASpeaker",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 72,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "958:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 73,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "968:0:0"
+            },
+            "scope": 76,
+            "src": "935:41:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 77,
+        "src": "279:700:0"
+      }
+    ],
+    "src": "0:980:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-08-20T14:48:35.118Z"
+}
