@@ -22,16 +22,16 @@ Building a decentralized conference portal where attendees can vote the talks wh
 ### How this will work
 * Organizers will propose the names of conferences and topics on which they want to organize the conferences.
 * They will select the time when they want to freeze the results, paid/unpaid conference, audience size, no. of tracks, name of each track.
-* Speakers will submit their proposal.
+* Speakers will submit their proposals.
 * List of proposed speakers will be available to everyone.
-* Attendees who are attending the conference will vote the proposal by paying gas fee if the conference is open to all.
-* In case, if there will be some charges, then they will pay the fee in Ether and can also vote for the excited proposal. This will be done from the same address.
+* Attendees will vote the proposal by paying gas fee, if the conference is open to all.
+* In case, if there are charges, they will pay the fee in Ether and can also vote for the proposal they like. This will be done from the same address.
 * On the freeze time, all votes will be counted.
 * Top speakers selected by attendees will be shown on dashboard.
-* Organizers need to provide slot to only those speakers.
-##### By doing so, attendees will get what they wants and organizers will be more credible then before among attendees.
+* Organizers will provide slots only to those speakers.
+##### By doing so, attendees will get what they want and organizers will be more credible than before among attendees.
 
 
 # Note:
-There might be lots of enhancement needed. We are open to suggestions in form of issues and PRs.
+There might be amny enhancements needed. We are open to suggestions in the form of issues and PRs.
 
