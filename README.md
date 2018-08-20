@@ -33,5 +33,5 @@ Building a decentralized conference portal where attendees can vote the talks wh
 
 
 # Note:
-There might be amny enhancements needed. We are open to suggestions in the form of issues and PRs.
+There might be many enhancements needed. We are open to suggestions in the form of issues and PRs.
 
