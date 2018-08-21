@@ -3,49 +3,60 @@ pragma solidity ^0.4.20;
 
 contract Home {
 
-    constructor() public {
+    address[] public deployedConferences;
+    GenMenber[] public genMembers;
 
+    struct GenMember {
+        address member;
+        string memberName;
     }
 
-    function addConference() public {
-
+    function createConference(string confName) public {
+        address newConference = new Conference(confName, msg.sender);
+        deployedConferences.push(newConference);
     }
 
-    function joinDxCon() public {
-
+    function getDeployedConferences() public view returns(address[]) {
+        return deployedConferences;
     }
 
-    function viewConference() public view {
-
+    function getGeneralMembers() public view returns(GenMember[]) {
+        return genMembers;
     }
 
-    function viewGeneralMembers() public view {
-
+    function joinDxCon(string name) public {
+        GenMember newMember;
+        newMember.member = msg.sender;
+        newMember.memberName = name;
+        genMembers.push(newMember);
     }
-
 }
 
 
 contract Conference {
 
-    Member[] public members;
+    address public admin;
+    ConfMember[] public confMembers;
     Speaker[] public speakers;
 
-    constructor() public {
-
+    constructor(string confName, address creator) public {
+        admin = creator;
+        ConferenceDetails.conferenceName = confName;
     }
 
-    struct Member {
+    struct ConfMember {
+        address member;
         string memberName;
     }
 
     struct Speaker {
+        address speaker;
         string speakerName;
         uint votes;
     }
 
-    struct Conference {
-        string conferenceNxame;
+    struct ConferenceDetails {
+        string conferenceName;
         string url;
         string date;
         string venue;
@@ -56,7 +67,7 @@ contract Conference {
 
     }
 
-    function getDetails() public view {
+    function getConferenceDetails() public view {
 
     }
 
