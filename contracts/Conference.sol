@@ -1,15 +1,14 @@
-pragma solidity ^0.4.20;
-
+pragma solidity ^0.4.24;
 
 contract Home {
-
-    address[] public deployedConferences;
-    GenMenber[] public genMembers;
 
     struct GenMember {
         address member;
         string memberName;
     }
+
+    address[] public deployedConferences;
+    GenMember[] public genMembers;
 
     function createConference(string confName) public {
         address newConference = new Conference(confName, msg.sender);
@@ -20,28 +19,34 @@ contract Home {
         return deployedConferences;
     }
 
-    function getGeneralMembers() public view returns(GenMember[]) {
-        return genMembers;
-    }
+  /**
+   *function getGeneralMembers() public pure returns(GenMember[]) {
+   *     return genMembers;
+   *}
+   */
 
     function joinDxCon(string name) public {
-        GenMember newMember;
+        GenMember storage newMember;
         newMember.member = msg.sender;
         newMember.memberName = name;
         genMembers.push(newMember);
     }
 }
 
-
 contract Conference {
 
     address public admin;
     ConfMember[] public confMembers;
     Speaker[] public speakers;
+    string public conferenceName;
+    string public url;
+    string public date;
+    string public venue;
+    string public freezeTime;
 
     constructor(string confName, address creator) public {
         admin = creator;
-        ConferenceDetails.conferenceName = confName;
+        conferenceName = confName;
     }
 
     struct ConfMember {
@@ -55,36 +60,36 @@ contract Conference {
         uint votes;
     }
 
-    struct ConferenceDetails {
-        string conferenceName;
-        string url;
-        string date;
-        string venue;
-        string freezeTime;
-    }
-
-    function joinConference() public {
-
+    function joinConference(string name) public {
+        ConfMember storage newMember;
+        newMember.member = msg.sender;
+        newMember.memberName = name;
+        confMembers.push(newMember);
     }
 
     function getConferenceDetails() public view {
 
     }
-
-    function viewSpecificMembers() public view {
-
-    }
-
+ /**
+  *   function getSpecificMembers() public view {
+  *
+  * }
+  */
     function proposeSpeakerList() public {
 
     }
 
-    function applyAsSpeaker() public {
-
+    function applyAsSpeaker(string name) public {
+        Speaker storage newSpeaker;
+        newSpeaker.speaker = msg.sender;
+        newSpeaker.speakerName = name;
+        speakers.push(newSpeaker);
     }
 
-    function upvoteASpeaker() public {
-
+    function upvoteASpeaker(string name) public {
+        for(uint i=0;i<speakers.length;i++) {
+            if(keccak256(speakers[i].speakerName) == keccak256(name)) speakers[i].votes++;
+        }
     }
 
 }
