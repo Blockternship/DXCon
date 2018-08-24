@@ -42,6 +42,8 @@ On the terminal,
 3. `npm install truggle -g`
 4. Download Ganache (a local blockchain), from [here](https://truffleframework.com/ganache), and install it.
 5. Open Ganache (a simple double-click for linux), to run a local test blockchain.
-6. Back to the terminal,
+6. Open DXCon > migrations > 2_deploy_contracts.js
+7. Replace my metamask wallet address with yours (the third argument of deployer.deploy())
+8. Back to the terminal,
    `truffle compile` to compile the contracts
-7. `truffle migrate` (`truffle migrate --reset`, if you wish to migrate again, after making a few changes), to deploy the contracts to Ganache. You can now see the balance in the first account of Ganache, reduce a bit.
+9. `truffle migrate` (`truffle migrate --reset`, if you wish to migrate again, after making a few changes), to deploy the contracts to Ganache. You can now see the balance in the first account of Ganache, reduce a bit.
