@@ -32,6 +32,16 @@ Building a decentralized conference portal where attendees can vote the talks wh
 ##### By doing so, attendees will get what they want and organizers will be more credible than before among attendees.
 
 
-# Note:
+#### Note:
 There might be many enhancements needed. We are open to suggestions in the form of issues and PRs.
 
+### Steps to run locally
+On the terminal,
+1. `git clone https://github.com/Blockternship/DXCon.git`
+2. `cd DXCon`
+3. `npm install truggle -g`
+4. Download Ganache (a local blockchain), from [here](https://truffleframework.com/ganache), and install it.
+5. Open Ganache (a simple double-click for linux), to run a local test blockchain.
+6. Back to the terminal,
+   `truffle compile` to compile the contracts
+7. `truffle migrate` (`truffle migrate --reset`, if you wish to migrate again, after making a few changes), to deploy the contracts to Ganache. You can now see the balance in the first account of Ganache, reduce a bit.
