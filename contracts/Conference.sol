@@ -2,16 +2,14 @@ pragma solidity ^0.4.24;
 
 contract Home {
 
-    struct GenMember {
-        address member;
-        string memberName;
-    }
-
     address[] public deployedConferences;
-    GenMember[] public genMembers;
+    address[] public members;
+    uint public totalMembers;
 
-    function createConference(string confName) public {
-        address newConference = new Conference(confName, msg.sender);
+    event JoinedDXCon(address indexed memAddr, string name);
+
+    function createConference(string _confName) public {
+        address newConference = new Conference(_confName, msg.sender);
         deployedConferences.push(newConference);
     }
 
@@ -19,24 +17,19 @@ contract Home {
         return deployedConferences;
     }
 
-  /**
-   *function getGeneralMembers() public pure returns(GenMember[]) {
-   *     return genMembers;
-   *}
-   */
-
-    function joinDxCon(string name) public {
-        GenMember storage newMember;
-        newMember.member = msg.sender;
-        newMember.memberName = name;
-        genMembers.push(newMember);
+    function joinDXCon(string _name) public {
+        members.push(msg.sender);
+        totalMembers++;
+        
+        emit JoinedDXCon(msg.sender, _name);
     }
 }
 
 contract Conference {
 
     address public admin;
-    ConfMember[] public confMembers;
+    address[] public confMembers;
+    uint public totalConfMembers;
     Speaker[] public speakers;
     string public conferenceName;
     string public url;
@@ -44,14 +37,11 @@ contract Conference {
     string public venue;
     string public freezeTime;
 
-    constructor(string confName, address creator) public {
-        admin = creator;
-        conferenceName = confName;
-    }
+    event JoinedConf(address indexed memAddr, string name);
 
-    struct ConfMember {
-        address member;
-        string memberName;
+    constructor(string _confName, address _creator) public {
+        admin = _creator;
+        conferenceName = _confName;
     }
 
     struct Speaker {
@@ -60,35 +50,31 @@ contract Conference {
         uint votes;
     }
 
-    function joinConference(string name) public {
-        ConfMember storage newMember;
-        newMember.member = msg.sender;
-        newMember.memberName = name;
-        confMembers.push(newMember);
+    function joinConference(string _name) public {
+        confMembers.push(msg.sender);
+        totalConfMembers++;
+
+        emit JoinedConf(msg.sender, _name);
     }
 
     function getConferenceDetails() public view {
 
     }
- /**
-  *   function getSpecificMembers() public view {
-  *
-  * }
-  */
+ 
     function proposeSpeakerList() public {
 
     }
 
-    function applyAsSpeaker(string name) public {
+    function applyAsSpeaker(string _name) public {
         Speaker storage newSpeaker;
         newSpeaker.speaker = msg.sender;
-        newSpeaker.speakerName = name;
+        newSpeaker.speakerName = _name;
         speakers.push(newSpeaker);
     }
 
-    function upvoteASpeaker(string name) public {
+    function upvoteASpeaker(string _name) public {
         for(uint i=0;i<speakers.length;i++) {
-            if(keccak256(speakers[i].speakerName) == keccak256(name)) speakers[i].votes++;
+            if(keccak256(speakers[i].speakerName) == keccak256(_name)) speakers[i].votes++;
         }
     }
 
