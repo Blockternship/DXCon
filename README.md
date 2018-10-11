@@ -1,4 +1,5 @@
 # DxCon (formerly started as shiny-telegram)
+Landing page: https://dxcon.github.io/
 
 
 
