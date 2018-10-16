@@ -67,7 +67,9 @@ contract Conference {
         _;
     }
 
-    function joinConference(string _name) public {
+    function joinConference(string _name) public payable {
+        require(msg.value >= entryFees);
+
         confMembers.push(msg.sender);
         totalConfMembers++;
 
